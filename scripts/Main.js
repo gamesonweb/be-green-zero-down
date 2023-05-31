@@ -1,5 +1,6 @@
 import {createPlayer} from "./characters/Player.js";
 import {createGround, createWall} from "./environments/Environments.js";
+import { createCube, createCube2 } from "./environments/cube.js";
 
 
 // Créer le moteur de rendu
@@ -31,6 +32,12 @@ createPlayer();
 createGround();
 
 createWall();
+
+scene.registerBeforeRender(function () {
+  createCube();
+  createCube2();
+});
+
 
 // Afficher la scène
 engine.runRenderLoop(function () {

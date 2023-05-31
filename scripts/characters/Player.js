@@ -104,7 +104,7 @@ export function createPlayer() {
     }
   );
 
-  BABYLON.SceneLoader.ImportMesh(
+   BABYLON.SceneLoader.ImportMesh(
     "",
     "../../assets/characters/",
     "walking.glb",
